@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    float: left;
+}
+
+ul {
+    background-image: linear-gradient(white, yellow);
+}
+
+section {
+    background-color: yellow;
+}
+
+article {
+    display: flex;
+}
+
+.dvaArtikle {
+    display: flex;
+}
+
+article > div {
+    display: flex;
+
+}
+.section-odkazy-1 {
+    color: red;
+}
+.section-odkazy-2 {
+    color: green;
+}
+.section-odkazy-3 {
+    color: blue;
+}
+.section-odkazy-4 {
+    color: black;
+}
+
+.obrazok {
+    width: 100px;
+    border: 10px solid black;
+    padding: 3px;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    section {
+        background-color: white;
+    }
+    article {
+        display: flex;
+    }
+    article > div {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .obrazok {
+        width: 100px;
+        border: 5px dotted black;
+        padding: 3px;
+    }
+    ul {
+        background-image: none;
+
+        background-color: green;
+        
+    }
+    li > a {
+        color: white;
+    }
+    .section-odkazy-1 {
+        color: pink;
+    }
+    .section-odkazy-2 {
+        color: violet;
+    }
+    .section-odkazy-3 {
+        color: yellow;
+    }
+    .section-odkazy-4 {
+        color: blue;
+    }
+
+
+}
+
+
+
+@media (max-width: 600px) {
+    .obrazok {
+        width: 100px;
+        border: none;
+        padding: 3px;
+    }
+    ul {
+        background-image: linear-gradient(black, blue);
+    }
+    li > a {
+        color: yellow;
+    }
+    section {
+        background-color: white;
+    }
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+    article > div {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-odkazy-1 {
+        color: red;
+    }
+    .section-odkazy-2 {
+        color: green;
+    }
+    .section-odkazy-3 {
+        color: red;
+    }
+    .section-odkazy-4 {
+        color: green;
+    }
+    article {
+        background-color: pink;
+
+    }
+
+
+}

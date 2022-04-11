@@ -1,0 +1,360 @@
+/*
+white = #FFFCF9
+red = #EF476F
+yellow = #FFD166
+blue = #26547C
+green = #06D6A0
+grey = #50514f
+*/
+
+/* WHOLE WEBSITE */
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 1500px;
+    margin: 20px auto 0 auto;
+    text-align: justify;
+}
+
+a, p, label {
+    color: #50514f;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 10px auto;
+    text-align: center;
+    animation-name: zmena_farby;
+    animation-duration: 6s;
+}
+
+table, th, td {
+    border: 1px solid #50514f;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+button {
+    color: #EF476F;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+videos {
+    display: flex;
+    flex-direction: column;
+}
+
+video {
+    width: 1080px;
+    height: 720px;
+    margin: 20px auto;
+    align-items: center;
+}
+
+.main-header {
+    width: 100%;
+}
+
+.cta {
+    font-size: 40px;
+    padding: 8px 25px;
+    margin: 30px auto;
+}
+
+.cta-small {
+    font-size: 20px;
+    color: #50514f;
+}
+
+.home-button {
+    width: 120px;
+}
+
+.nav-bar {
+    position: relative;
+    float: right;
+}
+
+a>img {
+    width: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar-item {
+    display: inline-block;
+    padding: 10px;
+}
+
+.text-hyperlink {
+    color: #26547C;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.home-website-main {
+    display: flex;
+}
+
+.home-text-section {
+    padding-right: 20px;
+}
+
+.comments {
+    padding: 0px 20px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+h1 {
+    clear: both;
+    margin-bottom: 40px;
+}
+
+.tech-main {
+    display: flex;
+}
+
+.tech-table {
+    flex: 50%;
+    box-sizing: border-box;
+}
+
+.tech-image {
+    flex: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.benchmark-score {
+    text-align: center;
+}
+
+.benchmark-main {
+    display: flex;
+}
+
+.benchmark-table {
+    flex: 50%;
+    box-sizing: border-box;
+}
+
+.benchmark-buttons {
+    flex: 50%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.galeria-foto {
+    width: 300px;
+    margin: 20px;
+}
+
+.ringtones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ringtones>audio {
+    margin: 20px 0;
+}
+
+.contact-main {
+    display: flex;
+}
+
+.contact-form {
+    flex: 70%;
+}
+
+.contact-contact {
+    flex: 30%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin: 0 60px;
+}
+
+.contact-form-formular>form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-contact>div {
+    width: 70%;
+}
+
+.recenzia {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.recenzia-vlavo {
+    width: 10%;
+}
+
+.recenzia-vpravo {
+    display: flex;
+}
+
+.recenzia-plus-minus {
+    display: flex;
+}
+
+.recenzia-plus-minus > p {
+    width: 50%;
+}
+
+.znacka {
+    display: flex;
+}
+
+.znacka-text {
+    margin: 40px;
+    width: 70%;
+}
+
+form>label {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer {
+    flex: calc(1/3 * 100%);
+    text-align: center;
+}
+
+.buy {
+    display: flex;
+}
+
+.buy-text {
+    width: 50%;
+    padding: 30px;
+}
+
+.buy-obrazok {
+    margin: 0 auto;
+}
+
+.buy-obrazok-obrazok {
+    width: 400px;
+}
+
+/* CSS ANIMACIA */
+
+@keyframes zmena_farby {
+    from {
+        color: red;
+    }
+    to {
+        color: black;
+    }
+}
+
+@keyframes tocenie {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.tocka {
+    width: 300px;
+}
+
+.tocka:hover {
+    animation-name: tocenie;
+    animation-duration: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px) {
+    body {
+        width: 500px;
+    } 
+
+    button {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .nav-bar-item {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    img {
+        width: 200px;
+    }
+    
+    .disappear {
+        display: none;
+    }
+    video {
+        width: 500px;
+        height: 333px;
+    }
+
+    .galeria-foto {
+        margin: auto;
+        text-align: center;
+    }
+
+    .recenziafoto {
+        width : 20px;
+    }
+
+    .buybutton {
+        font-size: 20px;
+    }
+    .buy-text {
+        width: 100%;
+    }
+    .contact-main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .contact-form {
+        flex: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .contact-contact {
+        flex: 100%;
+    }
+    .tech-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
